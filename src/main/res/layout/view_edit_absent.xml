@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Student Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:text="Mark here" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/absent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Absent" />
+
+        <RadioButton
+            android:id="@+id/present"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Present" />
+
+    </RadioGroup>
+
+</LinearLayout>

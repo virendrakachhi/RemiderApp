@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="gotoBack"
+            android:src="@drawable/backtolist" />
+        <ImageView
+            android:id="@+id/add_account_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+           android:src="@drawable/add" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="CheckLists"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/navigationButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:contentDescription="RightIcon"
+            android:src="@drawable/per" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dynamic_checklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"> </ListView>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+  <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+      android:visibility="gone"
+        android:id="@+id/scrollView">
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          android:weightSum="1">
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+           > </ListView>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:id="@+id/notes_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="Notes"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/notes_edit"
+                    android:layout_height="wrap_content"
+                    android:hint="Type any extra info if required"
+                    android:background="@drawable/edittext_bg"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:layout_margin="15dp"
+                    android:maxLines="15"
+                    android:minHeight="100dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pics_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="Pictures"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:id="@+id/pic1"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/accent_material_dark" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:id="@+id/pic2"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/accent_material_dark" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/saveBtn"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/white" />
+      </LinearLayout>
+ </ScrollView>
+    <include layout="@layout/right_navigation" />
+</RelativeLayout>

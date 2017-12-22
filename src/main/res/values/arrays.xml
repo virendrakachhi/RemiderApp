@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days_array">
+        <item>DAILY</item>
+        <item>Every Weekday (Monday to Friday)</item>
+        <item>Every Monday, Wednesday, Friday</item>
+        <item>Every Tuesday and Thursday</item>
+        <item>WEEKLY</item>
+        <item>MONTHLY</item>
+        <item>YEARLY</item>
+        <!--<item>REPEAT DATE</item>-->
+        <!--<item>REPEAT DAY</item>-->
+    </string-array>
+    <string-array name="radius_array">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="interval_time_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="register_user_type">
+        <item>School</item>
+        <item>Event</item>
+        <item>Company</item>
+        <item>Healthcare</item>
+    </string-array>
+
+    <string-array name="register_security_questions">
+        <item>What is your pet name?</item>
+        <item>Who is your childhood hero?</item>
+        <item>What is your favourite number?</item>
+    </string-array>
+
+</resources>

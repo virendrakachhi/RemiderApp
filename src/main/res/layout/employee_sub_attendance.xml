@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal"
+        android:weightSum="3">
+    <TextView
+        android:id="@+id/statusListItem"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="17dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Not Counted Yet."
+        />
+
+        <TextView
+            android:id="@+id/dateListItem"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Date"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

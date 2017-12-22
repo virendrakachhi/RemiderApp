@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:orientation="horizontal"
+>
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="BackArrow"
+                android:onClick="gotoBack"
+                android:src="@drawable/backtolist" />
+
+            <TextView
+                android:id="@+id/txtContactUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Select Employees"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/navigationButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:contentDescription="RightIcon"
+                android:src="@drawable/per" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No Employees Added yet."
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/select_emp_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" />
+
+        <Button
+            android:id="@+id/select_emp_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/right_navigation" />
+</RelativeLayout>

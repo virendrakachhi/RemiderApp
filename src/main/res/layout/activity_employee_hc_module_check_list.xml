@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+            tools:context=".Faq">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="gotoBack"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="BackArrow"
+                android:src="@drawable/backtolist" />
+
+            <TextView
+                android:id="@+id/txtFaqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="Checklist"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imgHelp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:contentDescription="RightIcon"
+                android:src="@drawable/question_mark" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+
+            <!--
+              <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal"
+        android:padding="10dp">
+            dskfj
+            -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Care Plan"
+                android:background="@color/dark_blue"
+                android:id="@+id/carePlanCheckListButton"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List from web"
+                android:layout_margin="15dp"
+                android:background="@color/dark_blue"
+                android:id="@+id/webCheckListButton"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/othersChatBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/othersName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:text="Sender name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/other_bubble"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/othersMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="left"
+                    android:padding="15dp"
+                    android:text="Get of the phonedsf dsgdfgdfdfgdfgdfgdfgdfgdfg   dfgdfgdfgdfgdfgdfggdfgdfgdfgdfgdfg ! "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/othersTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="80dp"
+                android:gravity="right"
+                android:text="19:50 "
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/meChatBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+             android:visibility="visible"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/meName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="55dp"
+                android:gravity="end"
+                android:text="Me"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/meMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="250dp"
+                    android:gravity="end"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/me_bubble"
+                    android:text="Get of the phone dsfsdsdhgfdjsfksdgfkjsdgf sdkgfskdjgf skj fgk ffkdg ! "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/meTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxWidth="200dp"
+                android:gravity="center"
+
+                android:layout_marginRight="30dp"
+                android:text="19:50 "
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+   </LinearLayout>
+
+

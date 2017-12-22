@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+              tools:context=".Contact_us">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:id="@+id/txtContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Contact us"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="gotoBack"
+                    android:layout_alignParentLeft="true"
+                    android:contentDescription="BackArrow"
+                    android:src="@drawable/backtolist" />
+
+                <ImageView
+                    android:id="@+id/imgHelp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:contentDescription="RightIcon"
+                    android:src="@drawable/question_mark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imgCall"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/call" />
+
+                    <ImageView
+                        android:id="@+id/imgVisit"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/visit" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtCallNow"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="Call now"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/txtVisitUs"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Visit us "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="0.49"
+                android:background="#187ebe"
+                android:ems="30"
+                android:hint="Email..."
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#187ebe"
+                android:ems="40"
+                android:gravity="top"
+                android:hint="Message"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtSend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="SEND"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+</LinearLayout>

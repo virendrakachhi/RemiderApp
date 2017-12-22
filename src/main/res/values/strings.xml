@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notified</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_absent_tab">Absent_tab</string>
+    <string name="title_activity_main_activitytab">MainActivitytab</string>
+    <string name="title_activity_absent">Absent</string>
+    <string name="title_activity_present">Present</string>
+    <string name="title_activity_add_student">AddStudent</string>
+    <string name="title_activity_alert">Alert</string>
+    <string name="title_activity_alert_tab1">Alert_tab1</string>
+    <string name="title_activity_archived_alert_tab">Archived_alert_tab</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_contact_us">Contact_us</string>
+    <string name="title_activity_report_choice">Report_choice</string>
+    <string name="title_activity_faq">Faq</string>
+    <string name="title_activity_search_result">Search_result</string>
+    <string name="title_activity_elementary">Elementary</string>
+    <string name="title_activity_settingup__class">Settingup_Class</string>
+    <string name="title_activity_set_up">Set_up</string>
+    <string name="title_activity_store">Store</string>
+    <string name="title_activity_stdents">Stdents</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="Mathematics">Mathematics</string>
+    <string name="Phyiscs">Phyiscs</string>
+    <string name="E"> E</string>
+    <string name="Event1">Event1</string>
+    <string name="Event2">Event2</string>
+    <string name="child1"> Tom</string>
+    <string name="child2">Lisa</string>
+    <string name="child3">Susan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_home_menu">Home_menu</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="title_activity___dummy">_DummyActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_dashboard_student">Student Dashboard</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="facebook_app_id">718265488301490</string>
+    <string name="app_key_hash">3ztC3a1lcyZzrCMWj37Bbidx4Fs=</string>
+
+    <string name="title_activity_find_key_hash">FindKeyHashActivity</string>
+    <string name="title_activity_register_with_facebook">RegisterWithFacebookActivity</string>
+    <string name="title_activity_register_with_google_plus">RegisterWithGooglePlusActivity</string>
+    <string name="title_activity_student_add_class">StudentAddClassActivity</string>
+
+    <!--notifications-->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_teacher_send_message_to_one_class">TeacherSendMessageToOneClass
+    </string>
+    <string name="title_activity_student_notifcation">StudentNotifcationActivity</string>
+    <string name="title_activity_select_location">SelectLocationActivity</string>
+    <string name="title_register">Register</string>
+    <string name="title_register_edit">Edit Account</string>
+    <string name="back_arrow" />
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_cpassword">Confirm Password</string>
+    <string name="hint_school">School</string>
+    <string name="hint_answer">Answer</string>
+    <string name="hint_or_register_with">-Or register with</string>
+    <string name="button_submit">Submit</string>
+    <string name="hint_twitter">Twitter</string>
+    <string name="hint_google_plus">Google plus</string>
+    <string name="hint_facebook">Facebook</string>
+    <string name="hint_drop_down">image</string>
+    <string name="title_activity_update_password">UpdatePasswordActivity</string>
+    <string name="no_class_data">You have no classes. Please tap the + button to setup one.</string>
+    <string name="no_company_data">You have no meeting place. Please tap the + button to setup one.</string>
+    <string name="no_event_data">You have no event. Please tap the + button to setup one.</string>
+    <string name="no_parent_data">You have no child. Please tap the + button to add one.</string>
+    <string name="text_take_attendance">Take Attendance</string>
+    <string name="blank" />
+    <string name="title_activity_map">Map</string>
+    <string name="report_absent">Absentee report</string>
+    <string name="report_custom">Run a custom report</string>
+    <string name="report_export">Export a report</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_create_class_event_company">CreateClassEventCompanyActivity
+    </string>
+    <string name="title_activity_custom_report">CustomReportActivity</string>
+    <string name="title_activity_add_class_event_company">AddClassEventCompanyActivity</string>
+    <string name="title_activity_show_class_event_company_users">
+        ShowClassEventCompanyUsersActivity
+    </string>
+    <string name="title_activity_common_attendance_taken">CommonAttendanceTakenActivity</string>
+    <string name="error_api">API not responding</string>
+    <string name="error_internet">Internet not working</string>
+    <string name="error_something">Something went wrong</string>
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+
+</resources>

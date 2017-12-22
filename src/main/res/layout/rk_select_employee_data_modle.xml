@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:elevation="3dp">
+
+        <CheckBox
+            android:id="@+id/select_emp_ckb"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/calendar_selected_day_bg"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/emp_info_cointainer"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:elevation="3dp"
+            >
+
+            <TextView
+                android:id="@+id/emp_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Ritesh"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/emp_email_txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ritesh@mobililyte.com"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

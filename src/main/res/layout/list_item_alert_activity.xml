@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/item_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/mobile_arc_alt"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/mobile" />
+
+        <TextView
+            android:id="@+id/emp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/deleteButton"
+            android:layout_toRightOf="@+id/mobile_arc_alt"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Thomas"
+            android:textColor="#1D8CD4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/message_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_name"
+            android:layout_toLeftOf="@+id/delete_button_arc_alt"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/mobile_arc_alt"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#1D8CD4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/messageLeft_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_alert"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/mobile_arc_alt"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#1D8CD4"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageLeft_alert"
+            android:layout_toRightOf="@+id/mobile_arc_alt"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="04-04-2016"
+            android:textColor="#1D8CD4"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/delete_button_arc_alt"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/archive_button_arc_alt"
+            android:padding="2dp"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/archive_button_arc_alt"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/alert_button_arc_alt"
+            android:contentDescription="@string/blank"
+            android:padding="2dp"
+            android:src="@drawable/database" />
+
+        <ImageView
+            android:id="@+id/alert_button_arc_alt"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/blank"
+            android:padding="2dp"
+            android:src="@drawable/alert" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_lay"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#1D8CD4" />
+
+</RelativeLayout>
+
+

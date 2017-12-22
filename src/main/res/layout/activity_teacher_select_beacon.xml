@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:gravity="center"
+        android:text="Select Beacons"
+        android:textColor="@color/white"
+        android:textSize="27sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:background="@android:color/transparent"
+        android:onClick="gotoBack"
+        android:padding="10dp"
+        android:src="@drawable/backtolist"/>
+
+    <ListView
+        android:id="@+id/beaconListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save"
+        android:layout_below="@+id/header"
+        android:choiceMode="multipleChoice"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+</RelativeLayout>

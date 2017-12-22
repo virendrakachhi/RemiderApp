@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="gotoBack"
+            android:src="@drawable/backtolist"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Class Setup"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imgHelp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/question_mark"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/className"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:ems="30"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:hint="Class name"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white"
+                android:textSize="20sp">
+
+                <requestFocus/>
+            </EditText>
+
+            <Button
+                android:id="@+id/timeField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Select Time "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/dateField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Select Date "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/dayField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:gravity="left"
+                android:minHeight="50dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Select Days "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/districtField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:ems="30"  android:gravity="center_vertical"
+                android:hint="District ( Optional)"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/codeField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#187ebe"
+                android:ems="30"  android:gravity="center_vertical"
+                android:hint="Code ( Optional )"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/locationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:minHeight="50dp"
+                android:background="#187ebe"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Location "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="@color/blue"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

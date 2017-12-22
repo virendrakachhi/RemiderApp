@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/popup_element"
+        android:layout_width="fill_parent"
+        android:layout_height="248dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="222dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/current_loc"
+            android:text="Current Location "
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="18dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/selectloc"
+            android:text="Select Location "
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="22dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/addbea"
+            android:text="Add Beacons"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+</LinearLayout>

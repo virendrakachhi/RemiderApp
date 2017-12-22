@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#187ebe"
+        android:padding="10dp"
+        android:text="Alen B"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/studentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="Stdent Email "
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/editStudentEmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/pen"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="fill_vertical"
+            android:paddingLeft="40dp"
+            android:text="• Example@ example.com "
+            android:textColor="@color/darkblue"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="fill_vertical"
+            android:paddingLeft="20dp"
+            android:text="Perents Email "
+            android:textColor="@color/blue"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/parentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="fill_vertical"
+            android:paddingLeft="40dp"
+            android:text="• Example@ example.com "
+            android:textColor="@color/darkblue"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
